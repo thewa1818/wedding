@@ -1,0 +1,120 @@
+@import "setting";
+
+* {
+  box-sizing: border-box;
+  font-family: BIZ UDPMincho;
+}
+
+header {
+  width: 100%;
+  background-color: $color_white;
+  font-size: 16px;
+  .header__wrap {
+    display: flex;
+    height: 90px;
+    max-width: 1000px;
+    justify-content: space-between;
+    margin: auto;
+    color: $font_color;
+
+    &--logo {
+      img {
+        width: 100%;
+        height: 100px;
+      }
+    }
+
+    &--nav {
+      .header__list {
+        display: flex;
+        height: 90px;
+        align-items: center;
+
+        :nth-child(4) {
+          border: 1px solid $color_blue;
+          border-radius: 5px;
+          padding: 10px 20px;
+          color: $color_blue;
+        }
+
+        &--item {
+          margin-left: 40px;
+          img {
+            width: 100%;
+            height: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+
+main {
+  .main__top {
+    background-color: $color_blue;
+    &--img {
+      height: 400px;
+      width: 1000px;
+      margin: 0 auto;
+      padding-top: 30px;
+      img {
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .main__about {
+    background-color: $color_white;
+    padding-top: 150px;
+    width: 100%;
+
+    &--title {
+      text-align: center;
+      font-weight: bold;
+      font-size: 24px;
+      color: $font_color;
+      padding-bottom: 50px;
+
+      img {
+        padding-right: 10px;
+      }
+    }
+
+    .main__sub {
+      display: flex;
+      width: 1000px;
+      margin: 0 auto;
+      height: 380px;
+      &--flex {
+        display: flex;
+        flex-direction: column;
+      }
+      &--title {
+        font-size: 22px;
+        font-weight: bold;
+        color: #74a8a8;
+        line-height: 35px;
+        padding-bottom: 30px;
+        &--text {
+          font-size: 16px;
+          color: $font_color;
+          line-height: 25px;
+          padding-right: 10px;
+        }
+      }
+      img {
+        width: 320px;
+        height: 320px;
+        object-fit: cover;
+        display: block;
+        box-shadow: 8px 8px $color_blue;
+      }
+    }
+    .sub__img {
+      height: auto;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
